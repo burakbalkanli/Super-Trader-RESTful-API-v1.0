@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trader API v1.0</title>
+</head>
+<body>
+    <h1>Welcome the Super Trader API v1.0</h>
+
+    <ul>Models
+        <li>User</li>
+        <li>Portfolio</li>
+        <li>Share</li>
+        <li>Transaction</li>
+    </ul>
+
+    <ul>User
+        <li>/user<ul><li>Get information for all users.</li></ul></li>
+        <li>/user/:id<ul><li>Get information for user with users id.</li></ul></li>
+        <li>/user/createUser<ul><li>Create a user with request body.</li><li>username, name, surname must be in the request body.</li></ul></li>
+        <li>/user/updateUser/:id<ul><li>Update a user with user id and request body.</li><li>username, name, surname must be in the request body.</li></ul></li>
+        <li>/user/deleteUser/:id<ul><li>Delete a user with user id</li></ul></li>
+    </ul>
+
+    <ul>Portfolio
+        <li>/portfolio<ul><li>Get information for all portfolios.</li></ul></li>
+        <li>/portfolio/:userid<ul><li>Get information of users portfolio with users id.</li></ul></li>
+    </ul>
+
+    <ul>Share
+        <li>/share<ul><li>Get information for all shares.</li></ul></li>
+        <li>/share/createShare<ul><li>Create a share with request body.</li><li>code, name must be in the request body.</li></ul></li>
+        <li>/share/updateShare/:id<ul><li>Update a share with share id and request body.</li><li>code, name must be in the request body.</li></ul></li>
+        <li>/share/deleteShare/:id<ul><li>Delete a share with share id</li></ul></li>
+    </ul>
+
+    <ul>Transaction
+        <li>/transaction<ul><li>Get information for all transactions.</li></ul></li>
+        <li>/transaction/buy<ul><li>Buy a share with request body.</li><li>share code, username, unit must be in the request body.</li></ul></li>
+        <li>/transaction/sell<ul><li>Sell a share with request body.</li><li>share code, username, unit must be in the request body.</li></ul></li>
+    </ul>
+</body>
+</html>
